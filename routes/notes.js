@@ -26,4 +26,5 @@ router.get('/', function (req, res, next) {
 // 全件取得して返す
 res.json(responseObjectDataAll);
 })
+
 module.exports = router;
