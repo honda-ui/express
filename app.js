@@ -8,6 +8,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var helloRouter = require('./routes/hello');
 
+console.log('indexRouter:', typeof indexRouter);
+console.log('usersRouter:', typeof usersRouter);
+console.log('helloRouter:', typeof helloRouter);
 
 var app = express();
 
