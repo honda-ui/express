@@ -12,6 +12,7 @@ var notesRouter = require('./routes/notes');
 console.log('indexRouter:', typeof indexRouter);
 console.log('usersRouter:', typeof usersRouter);
 console.log('helloRouter:', typeof helloRouter);
+console.log('notesRouter:', typeof notesRouter);
 
 var app = express();
 
