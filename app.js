@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -9,12 +11,15 @@ var usersRouter = require('./routes/users');
 var helloRouter = require('./routes/hello');
 var notesRouter = require('./routes/notes');
 var catRouter = require('./routes/cat');
+var qrcodeRouter = require('./routes/qrcode');
 
 console.log('indexRouter:', typeof indexRouter);
 console.log('usersRouter:', typeof usersRouter);
 console.log('helloRouter:', typeof helloRouter);
 console.log('notesRouter:', typeof notesRouter);
 console.log('catRouter:', typeof catRouter);
+console.log('qrcodeRouter:', typeof qrcodeRouter);
+
 
 var app = express();
 
@@ -33,6 +38,7 @@ app.use('/users', usersRouter);
 app.use('/hello', helloRouter);
 app.use('/notes', notesRouter);
 app.use('/cat', catRouter);
+app.use('/qrcode', qrcodeRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

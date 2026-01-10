@@ -4,3 +4,4 @@ connect_mongodb/node_modules/
 *.swp
 *.swo
 .env
+node_modules/
